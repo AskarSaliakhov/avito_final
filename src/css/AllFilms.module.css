@@ -1,0 +1,56 @@
+/* Общие стили */
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px; /* добавим внутренние отступы */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.filters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.filters div {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters p {
+    margin: 0 0 5px;
+    font-size: 14px;
+}
+
+.films {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Адаптивная верстка */
+
+@media screen and (max-width: 768px) {
+    .filters {
+        grid-template-columns: repeat(2, 1fr); /* два столбца на экранах шириной до 768px */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .filters {
+        grid-template-columns: 1fr; /* один столбец на экранах шириной до 480px */
+    }
+}

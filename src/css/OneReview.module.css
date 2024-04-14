@@ -1,0 +1,42 @@
+/* OneReview.module.css */
+
+.reviewContainer {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.reviewContent {
+    font-size: 14px;
+}
+
+.fullReviewButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+@media (max-width: 768px) {
+    .reviewContainer {
+        width: 100%; /* Занимаем всю доступную ширину экрана для мобильных устройств */
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .reviewContent {
+        font-size: 16px;
+    }
+
+    .fullReviewButton {
+        font-size: 16px;
+    }
+}

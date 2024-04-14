@@ -1,0 +1,27 @@
+
+
+button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    background-color: #f2f2f2;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pageButton:hover {
+    background-color: #e5e5e5;
+}
+
+
+.currentPage {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+
+.currentPage{
+    background-color: #a6a6a6;
+}

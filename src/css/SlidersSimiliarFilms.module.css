@@ -1,0 +1,61 @@
+
+
+.sliderContainer {
+    width: 100%; /* Занимает всю доступную ширину */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.image {
+    width: 100%; /* Изображение занимает всю доступную ширину */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+
+@media (max-width: 768px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .swiper-button-prev {
+        left: 5px;
+    }
+
+    .swiper-button-next {
+        right: 5px;
+    }
+}
+
+

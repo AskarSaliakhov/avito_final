@@ -1,0 +1,52 @@
+
+.film {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+
+}
+
+.film:hover {
+    background-color: #f7f7f7;
+}
+
+.filmPoster {
+    width: 200px;
+    margin-right: 20px;
+}
+
+
+.filmInfo {
+    color: #646464;
+}
+
+.filmName {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
+.countries li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.minHeight600 {
+    min-height: 300px;
+}
+
+.countries {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.country {
+    margin-bottom: 5px; /* Пространство между странами */
+}

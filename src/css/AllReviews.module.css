@@ -1,0 +1,18 @@
+.all__reviews{
+    position: relative;
+    top:330px;
+    width: 600px;
+}
+.reviews__statika{
+    font-family: Georgia, serif;
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .reviews__statika {
+        font-size: 20px; /* Уменьшаем размер заголовка для мобильных устройств */
+    }
+    .all__reviews{
+        max-width: 100%;
+    }
+}
