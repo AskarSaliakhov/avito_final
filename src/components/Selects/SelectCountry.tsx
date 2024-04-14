@@ -50,7 +50,7 @@ export function SelectCountry({ data, onSelectChange }: Props) {
             <Select
                 options={data}
                 components={{ DropdownIndicator }}
-                placeholder="Выберите фильтр"
+                placeholder="США"
                 noOptionsMessage={() => 'Нет фильтров'}
                 onChange={handleOptionChange}
                 value={selectedOptionCountry}
