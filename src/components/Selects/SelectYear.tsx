@@ -46,7 +46,7 @@ export function SelectYear({data, onSelectChange}: Props) {
         <Select
             options={data}
             components={{DropdownIndicator}}
-            placeholder="Выберите фильтр"
+            placeholder="2024"
             noOptionsMessage={() => 'Нет фильтров'}
             onChange={handleOptionChange}
             value={selectedOptionYear}
