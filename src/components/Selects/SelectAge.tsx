@@ -44,7 +44,7 @@ export function SelectAge({ data, onSelectChange }: Props) {
         <Select
             options={data}
             components={{ DropdownIndicator }}
-            placeholder="Выберите фильтр"
+            placeholder="18"
             noOptionsMessage={() => 'Нет фильтров'}
             onChange={handleOptionChange}
             value={selectedOptionAge}
