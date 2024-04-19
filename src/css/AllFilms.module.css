@@ -1,9 +1,9 @@
-/* Общие стили */
+
 
 .container {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 0 20px; /* добавим внутренние отступы */
+    padding: 0 20px;
 }
 
 .header {
@@ -41,16 +41,16 @@
     margin: 0;
 }
 
-/* Адаптивная верстка */
+
 
 @media screen and (max-width: 768px) {
     .filters {
-        grid-template-columns: repeat(2, 1fr); /* два столбца на экранах шириной до 768px */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 480px) {
     .filters {
-        grid-template-columns: 1fr; /* один столбец на экранах шириной до 480px */
+        grid-template-columns: 1fr;
     }
 }

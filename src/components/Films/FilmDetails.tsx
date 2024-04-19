@@ -64,9 +64,8 @@ export function FilmDetails() {
     useEffect(() => {
         let realId = id?.split("=")[1];
         fetch(`https://api.kinopoisk.dev/v1.4/review?page=${pageReview}&limit=5&movieId=${realId}`, {
-            // @ts-ignore
             headers: {
-                'X-API-KEY': process.env.REACT_APP_TOKEN
+                'X-API-KEY': process.env.REACT_APP_TOKEN || ''
             }
         })
             .then(res => res.json())
@@ -81,9 +80,8 @@ export function FilmDetails() {
     useEffect(() => {
         let realId = id?.split("=")[1];
         fetch(`https://api.kinopoisk.dev/v1.4/movie/${realId}`, {
-            // @ts-ignore
             headers: {
-                'X-API-KEY': process.env.REACT_APP_TOKEN
+                'X-API-KEY': process.env.REACT_APP_TOKEN || ''
             }
         })
             .then(res => res.json())
@@ -101,9 +99,8 @@ export function FilmDetails() {
     useEffect(() => {
         let realId = id?.split("=")[1];
         fetch(`https://api.kinopoisk.dev/v1.4/image?page=1&limit=10&movieId=${realId}`, {
-            // @ts-ignore
             headers: {
-                'X-API-KEY': process.env.REACT_APP_TOKEN
+                'X-API-KEY': process.env.REACT_APP_TOKEN || ''
             }
         })
             .then(res => res.json())
@@ -121,9 +118,8 @@ export function FilmDetails() {
     useEffect(() => {
         let realId = id?.split("=")[1];
         fetch(`https://api.kinopoisk.dev/v1.4/season?page=${pageSeries}&limit=1&movieId=${realId}`, {
-            // @ts-ignore
             headers: {
-                'X-API-KEY': process.env.REACT_APP_TOKEN
+                'X-API-KEY': process.env.REACT_APP_TOKEN || ''
             }
         })
             .then((data) => data.json())

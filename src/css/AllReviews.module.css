@@ -10,7 +10,7 @@
 
 @media (max-width: 768px) {
     .reviews__statika {
-        font-size: 20px; /* Уменьшаем размер заголовка для мобильных устройств */
+        font-size: 20px;
     }
     .all__reviews{
         max-width: 100%;

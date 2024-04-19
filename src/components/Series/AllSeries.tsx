@@ -13,7 +13,7 @@ interface AllSeasonsProps {
 export function AllSeries({seasons, total, onPageChange}: AllSeasonsProps) {
     const seasonsRef = useRef<HTMLDivElement>(null);
     const [pageSeasons, setPageSeasons] = useState<number>(1);
-    const [showFullSeasonIndex, setShowFullSeasonIndex] = useState<number | null>(null); // Добавляем состояние для отображения полного сезона
+    const [showFullSeasonIndex, setShowFullSeasonIndex] = useState<number | null>(null);
 
     const scrollToTop = () => {
         if (seasonsRef.current) {
@@ -33,7 +33,7 @@ export function AllSeries({seasons, total, onPageChange}: AllSeasonsProps) {
         scrollToTop();
     };
 
-    const toggleFullSeason = (index: number) => { // Добавляем функцию для переключения отображения полного сезона
+    const toggleFullSeason = (index: number) => {
         setShowFullSeasonIndex(showFullSeasonIndex === index ? null : index);
     };
 

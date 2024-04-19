@@ -43,7 +43,7 @@ export const CUSTOMS_STYLES: StylesConfig = {
     dropdownIndicator: (provided, state) => ({
         ...provided,
         position: 'absolute',
-        right: '18px', // Сдвигаем треугольник влево
+        right: '18px',
         top: '50%',
         transform: 'translateY(-50%)',
     }),

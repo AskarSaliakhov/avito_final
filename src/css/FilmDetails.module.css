@@ -13,7 +13,7 @@
 .name {
     font-family: sans-serif;
     font-size: 50px;
-    margin-right: 20px; /* Добавляем правый отступ между именем фильма и "В главных ролях" */
+    margin-right: 20px;
 }
 
 
@@ -148,84 +148,84 @@ a:focus {
 
 
 
-/* Добавим стили для медиа-запросов */
+
 @media only screen and (max-width: 768px) {
 
 
     .details {
-        flex-direction: column; /* Изменяем направление блоков на вертикальное */
+        flex-direction: column;
     }
 
     .poster {
-        width: 100%; /* Ширина постера занимает всю доступную ширину */
-        max-height: auto; /* Высота постера автоматически подстраивается под ширину */
-        margin-bottom: 20px; /* Добавляем отступ снизу */
+        width: 100%;
+        max-height: auto;
+        margin-bottom: 20px;
     }
 
     .info {
-        padding-left: 0; /* Убираем отступ слева */
-        width: 100%; /* Ширина блока с информацией занимает всю доступную ширину */
+        padding-left: 0;
+        width: 100%;
     }
 
     .actorInfo {
-        width: 100%; /* Ширина блока с актерами занимает всю доступную ширину */
-        margin-top: 20px; /* Добавляем отступ сверху */
+        width: 100%;
+        margin-top: 20px;
     }
 
     .all__actors_stat {
-        font-size: 16px; /* Уменьшаем размер шрифта */
+        font-size: 16px;
     }
 
     .paginationContainer {
-        margin-top: 20px; /* Добавляем отступ сверху */
+        margin-top: 20px;
     }
 
     .full__info {
-        margin-top: 20px; /* Добавляем отступ сверху */
+        margin-top: 20px;
     }
 
     .point__wrapper {
-        margin-top: 20px; /* Добавляем отступ сверху */
-        margin-bottom: 20px; /* Добавляем отступ снизу */
+        margin-top: 20px;
+        margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
     }
 
     .raiting {
-        margin-bottom: 10px; /* Увеличиваем отступ снизу */
+        margin-bottom: 10px;
     }
 
     .rating__again {
-        top: 0; /* Убираем смещение сверху */
-        left: 0; /* Убираем смещение слева */
+        top: 0;
+        left: 0;
     }
 
     .slider-wrapper__posters,
     .slider-wrapper {
-        margin-top: 20px; /* Добавляем отступ сверху */
+        margin-top: 20px;
     }
 
     .no__similar__movies {
-        margin-top: 20px; /* Добавляем отступ сверху */
+        margin-top: 20px;
     }
 
     .similar__statika,
     .description__statika {
-        font-size: 24px; /* Уменьшаем размер шрифта */
+        font-size: 24px;
     }
 
     .description__all {
-        width: 100%; /* Ширина блока с описанием занимает всю доступную ширину */
+        width: 100%;
     }
 
     .description__text {
-        font-size: 16px; /* Уменьшаем размер шрифта */
+        font-size: 16px;
     }
 
     .back {
-        margin-left: 0; /* Убираем отступ слева */
+        margin-left: 0;
         margin-top: 20px;
-        /* Добавляем отступ сверху */
+
     }
 
 

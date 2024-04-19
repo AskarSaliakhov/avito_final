@@ -53,6 +53,7 @@ export function AllFilms() {
 
     const handleSearchChange = (value: string) => {
         setSearchQuery(value)
+        setPage(1)
     };
 
     const selectChangeLimit = (selectedOption: SelectOptionType | null) => {
@@ -65,18 +66,21 @@ export function AllFilms() {
     const selectChangeCountries = (selectedOption: SelectOptionType | null) => {
         if (selectedOption) {
             setSelectedCountries(selectedOption.value);
+            setPage(1)
         }
     };
 
     const selectChangeYears = (selectedOption: SelectOptionType | null) => {
         if (selectedOption) {
             setSelectedYears(parseInt(selectedOption.value));
+            setPage(1)
         }
     };
 
     const selectChangeAge = (selectedOption: SelectOptionType | null) => {
         if (selectedOption) {
             setSelectedAge(parseInt(selectedOption.value));
+            setPage(1)
         }
     };
 
@@ -84,9 +88,8 @@ export function AllFilms() {
         try {
             setSearchQuery("")
             const response = await fetch(`https://api.kinopoisk.dev/v1.4/movie?page=${page}&limit=${limit}&year=${selectedYears}&ageRating=${selectedAge}&countries.name=${selectedCountries}`, {
-                // @ts-ignore
                 headers: {
-                    'X-API-KEY': process.env.REACT_APP_TOKEN
+                    'X-API-KEY': process.env.REACT_APP_TOKEN || ''
                 }
             })
 
@@ -107,9 +110,8 @@ export function AllFilms() {
     const fetchFilms = async () => {
         try {
             const response = await fetch(`https://api.kinopoisk.dev/v1.4/movie/search?page=${page}&limit=${limit}&query=${encodeURIComponent(debouncedValue)}`, {
-                // @ts-ignore
                 headers: {
-                    'X-API-KEY': process.env.REACT_APP_TOKEN
+                    'X-API-KEY': process.env.REACT_APP_TOKEN || ''
                 }
             });
 

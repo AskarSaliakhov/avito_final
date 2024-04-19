@@ -1,0 +1,28 @@
+.randomFilm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.randomFilm img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.randomFilm button:hover {
+    background-color: #e5e5e5;
+}
+
+@media (max-width: 600px) {
+    .randomFilm {
+        padding: 10px;
+    }
+
+    .randomFilm button {
+        font-size: 14px;
+    }
+}
+

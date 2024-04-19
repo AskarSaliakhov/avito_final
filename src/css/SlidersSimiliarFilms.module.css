@@ -1,7 +1,7 @@
 
 
 .sliderContainer {
-    width: 100%; /* Занимает всю доступную ширину */
+    width: 100%;
 }
 
 .swiper-button-prev,
@@ -37,8 +37,8 @@
 }
 
 .image {
-    width: 100%; /* Изображение занимает всю доступную ширину */
-    height: auto; /* Автоматическая высота для сохранения пропорций */
+    width: 100%;
+    height: auto;
 }
 
 @media (max-width: 768px) {

@@ -1,4 +1,4 @@
-// AllReviews.tsx
+
 
 import { OneReview } from "./OneReview";
 import { Reviews } from "../../interfaces";

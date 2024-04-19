@@ -16,8 +16,8 @@ export function SliderPosters({ posters }: Props) {
             <Swiper
                 modules={[Navigation]}
                 loop={true}
-                spaceBetween={20} // Пространство между слайдами
-                slidesPerView={1} // Количество слайдов, отображаемых одновременно
+                spaceBetween={20}
+                slidesPerView={1}
                 navigation
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}
